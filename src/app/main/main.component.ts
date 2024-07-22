@@ -1,4 +1,7 @@
+import { Dialog } from '@angular/cdk/dialog';
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { FormmodulComponent } from '../formmodul/formmodul.component';
 
 @Component({
   selector: 'app-main',
@@ -7,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  constructor(public dialog:MatDialog){}
+
+OpenModul(){
+  this.dialog.open(FormmodulComponent)
+}
 }

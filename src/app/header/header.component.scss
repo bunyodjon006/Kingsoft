@@ -5,11 +5,13 @@
 .main .mains:active{
     border-bottom: 5px solid #0c0c0c11;
     transition: 0.2s cubic-bezier();
+  
     
 }
 .main .servicess:active {
     border-bottom: 5px solid #0c0c0c11;
     transition: 0.2s cubic-bezier();
+  
 }
 h1 {
     color: blue;
@@ -24,6 +26,7 @@ h1 span {
     font-size: 1.2rem;
     font-family: sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 .servicess a {
     text-decoration: none;
@@ -31,6 +34,7 @@ h1 span {
     font-size: 1.2rem;
     font-family: sans-serif;
     font-weight: 500;
+    cursor: pointer;
 }
 .containers {
     display: flex;
