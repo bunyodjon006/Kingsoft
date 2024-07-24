@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { ServicesComponent } from './services/services.component';
-import { FooterComponent } from './footer/footer.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material';
 import { FormmodulComponent } from './formmodul/formmodul.component';
@@ -19,7 +19,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     HeaderComponent,
     MainComponent,
     ServicesComponent,
-    FooterComponent,
+
     FormmodulComponent
   ],
   imports: [
