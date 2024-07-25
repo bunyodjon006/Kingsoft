@@ -13,6 +13,6 @@ export class MainComponent {
   constructor(public dialog:MatDialog){}
 
 OpenModul(){
-
+this.dialog.open(FormmodulComponent)
 }
 }
