@@ -407,38 +407,104 @@
     width:600px;
     font-family:sans-serif;
 }
-.mains {
-    width:100%;
-     margin-top: 30px;
-      background-color: rgb(17 24 39 );
-      height:200px;
-      padding: 20px;
+// .mains {
+//     min-width:100%;
+//      margin-top: 30px;
+//       background-color: rgb(17 24 39 );
+//       height:200px;
+//       padding: 20px;
       
-  }
+//   }
 
-  .pages-footer-1 {
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between;
-  }
-  .pages-footer-1 .footers_title h1 {
+//   .pages-footer-1 {
+//       margin-top: 30px;
+//       display: flex;
+//       justify-content: space-between;
+//   }
+//   .pages-footer-1 .footers_title h1 {
+//     color: blue;
+//     font-family: sans-serif;
+// }
+// .pages-footer-1 .footers_title h1 span {
+//     color: black;
+// }
+// .copy {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .copy h1 {
+//     color: #fff;
+//     font-size: 1.5rem;
+//     font-weight: 200;
+//     font-family: sans-serif;
+// }
+.mains {
+    min-width: 100%;
+    margin-top: 30px;
+    background-color: rgb(17, 24, 39);
+    padding: 20px;
+}
+
+.pages-footer-1 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pages-footer-1 .footers_title h1 {
     color: blue;
     font-family: sans-serif;
 }
+
 .pages-footer-1 .footers_title h1 span {
     color: black;
 }
+
+.pages-footer-1 img {
+    max-width: 100%;
+    height: auto;
+}
+
 .copy {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    text-align: center;
 }
+
 .copy h1 {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 200;
     font-family: sans-serif;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .pages-footer-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages-footer-1 img {
+        margin-top: 10px;
+    }
+
+    .copy h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .copy h1 {
+        font-size: 1rem;
+    }
+}
+
 .page_content-right {
     margin-left: 90px;
     display: flex;
@@ -523,7 +589,19 @@ margin-top: 20px;
         text-align: center;
         padding: none;
     }
-
+    .page_content-right {
+        margin-left: -40px;
+        min-width:100px;
+        height:auto;
+    }   
+    .page_content-right form .form_page .form_input input {
+        min-width:50px;
+        width:auto;
+    }
+    // .mains {
+    //     min-width:100%;
+    //     width:101%;
+    // }
     .container_card-page .card .card-text h3 {
         font-size: 1rem;
         width: auto;
@@ -608,7 +686,11 @@ margin-top: 20px;
         width: 70%;
     }
 }
-
+@media only screen and (max-width:760px){
+    .page_content-right {
+        display: none;
+    }
+}
 @media only screen and (max-width:690px) {
     .content_title p {
         width: auto;
@@ -661,6 +743,10 @@ margin-top: 20px;
 }
 
 @media only screen and (max-width:649px) {
+    .mains {
+        min-width: 103%;
+        width:105%;
+    }
     .content_2 .page_content-2 {
         width: 550px;
         flex-direction: column;
@@ -740,13 +826,27 @@ margin-top: 20px;
         padding-bottom: 10px;
 
     }
+    .mains {
+       min-width:106%;
+       width: 109%;
+       }
+      .page_content-6 .pages_titles h1 {
+font-size:1.3rem;
+margin-left:30px;
+       }
+       .copy h1 {
+        font-size:1.2rem;
+       }
 }
 
 @media only screen and (max-width:515px) {
     .main {
         max-width: 515px;
     }
-
+    .mains {
+        min-width:106%;
+        width: 109%;
+        }
     .content_2 {
         text-align: center;
         margin-left: 30px;
@@ -828,6 +928,10 @@ margin-top: 20px;
         max-width: 402px;
         min-width: 1px;
     }
+    .mains {
+        min-width:106%;
+        width: 109%;
+        }
 }
 
 @media only screen and (max-width:413px) {
@@ -836,13 +940,20 @@ margin-top: 20px;
         height: auto;
         padding: 10px;
     }
+    .mains {
+        min-width:106%;
+        width: 109%;
+        }
 }
 
 @media only screen and (max-width:402px) {
     .main {
         max-width: 402px;
     }
-
+    .mains {
+        min-width:106%;
+        width: 109%;
+        }
     // .pages_img img {
     //     width: 240px;
     //     min-width: 10px;
